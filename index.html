@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="Style/styles.css">
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">My Works</a>
+            <a href="#contact">Contact</a>
+            <a href="lessons.html">Lesson Materials</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, Myself</h3>
+            <h1>Buwani Hemachandra</h1>
+            <h3>And I'm a Undergraduate <span>Full-Stack Developer</span></h3> 
+            <p>I am a dedicated full-stack developer passionate about crafting innovative web applications. With hands-on experience in front-end and back-end technologies, I excel in creating responsive and user-friendly digital solutions. My strong problem-solving skills and commitment to staying updated with emerging technologies make me a valuable asset to any development team.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/buwani.hemachandra?mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/_buwani/?igsh=MW54Mmk5MW9iZXB0dg%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/buwani-hemachandra"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <a href="CV/Buwani Hemachandra.pdf" download class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="img/mydp.png" alt="">
+        </div>
+    </section>
+    
+        <!------------about-------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="img/portfolioImg.jpg" alt="User Image">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About <span>Me</span></h1>
+                        <p class="para">I am a dedicated full-stack developer passionate about crafting innovative web applications. With hands-on experience in front-end and back-end technologies, I excel in creating responsive and user-friendly digital solutions. My strong problem-solving skills and commitment to staying updated with emerging technologies make me a valuable asset to any development team.</p>
+    
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                            <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                        </div>
+    
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br>Web Development</li>
+                                <li><span>App Development</span><br>Building Android/iOS apps</li>
+                            </ul>
+                        </div>
+    
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2023 - 2024</span><br>Web Development</li>
+                                <li><span>2023 - 2024</span><br>App Development</li>
+                                <li><span>2023 - Current</span><br>UI/UX interface design and development</li>
+                            </ul>
+                        </div>
+    
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2017</span><br>G C E Ordinary Level Examination - G/Sanghamitta Balika Vidyalaya</li>
+                                <li><span>2020 - (2021)</span><br>G C E Advanced Level Examination - G/Sanghamitta Balika Vidyalaya</li>
+                                <li><span>2022</span><br>IT Diploma Certificate course in Esoft Metro Campus</li>
+                                <li><span>2023</span><br>B.Sc. (Hons) Computer Science and Software Engineering - Sliit City UNI</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Discover the world of web development through my portfolio of dynamic and user-centric websites. This showcase embodies my passion for crafting interactive and seamless online experiences. Each project reflects my commitment to delivering innovative solutions tailored to your unique needs. Let's collaborate to bring your digital vision to life and make an impactful presence on the web.</p>
+                
+            </div>
+
+            <div class="services-box">
+                <i class="fa-solid fa-palette"></i>
+                <h3>UI/UX Designing</h3>
+                <p>Embark on a journey of intuitive design with my UI/UX portfolio. Each project showcases my dedication to creating engaging and user-friendly interfaces. From wireframes to prototypes, I prioritize your audience's needs, ensuring every click feels intuitive and every interaction seamless. Let's work together to transform your ideas into captivating digital experiences that resonate with your audience.</p>
+                
+            </div>
+
+            <div class="services-box">
+                <i class="fa-brands fa-android"></i>
+                <h3>App Development</h3>
+                <p>Step into the realm of app development with my portfolio of cutting-edge mobile solutions. Each project epitomizes my zeal for creating intuitive and high-performance applications. From concept to deployment, I focus on your specific requirements, ensuring every feature enhances user engagement and functionality. Let's team up to transform your app idea into a reality that resonates with users and makes a lasting impact in the digital sphere.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="img/1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Experience the beauty of my latest creation: a fully functional cosmetic website designed to captivate and inspire.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/2.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>App Design</h4>
+                    <p>Experience the beauty of my latest creation: a fully functional  Travel App designed to captivate and inspire.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/3.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Experience the beauty of my latest creation: a fully functional Event Management System website designed to captivate and inspire.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/4.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Experience the beauty of my latest creation: a fully functional Porfolio website designed to captivate and inspire.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/5.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Experience the beauty of my latest creation: a fully functional Phone shop Selling Item website designed to captivate and inspire.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="img/6.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Experience the beauty of my latest creation: a fully functional Admin Panel designed to captivate and inspire.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+    </section>
+    
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Buwani Hmeachandra | All Rights Reserved.</p>
+        </div>
+        <div class="footer-icontop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
+
+    <!------------------contact form---------------->
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwn68jlq95yVbYZlbRiU_F8R2zxH6H_lIIPM7FyIFWGf2taCPcWfmjQwzVzHgohRHqvXw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>{
+        msg.innerHTML = "Message sent successfuly"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+      })
+      
+  
+</script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
