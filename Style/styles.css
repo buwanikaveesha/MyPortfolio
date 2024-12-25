@@ -384,6 +384,9 @@ span {
     color: var(--snd-bg-color);
 }
 
+.portfolio-layer button {
+    width: 80px;
+    height: 50px;
 /*----------------Contact------------------*/
 
 .contact h2 {
