@@ -61,7 +61,7 @@ section {
 .navbar {
     position: fixed;
     top: 0;
-    right: -100%; /* Initially hidden */
+/*     right: -100%; /* Initially hidden */ 
     width: 250px;
     height: 100vh;
     background: #333;
