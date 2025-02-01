@@ -62,10 +62,14 @@ section {
 .navbar {
     position: fixed;
     top: 0;
-    right: -100%; /* Initially hidden */
+    right: -100%;
     width: 250px;
     height: 100vh;
-    background: #333;
+    background: var(--snd-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     transition: right 0.3s ease-in-out;
 }
 
@@ -73,24 +77,29 @@ section {
     right: 0;
 }
 
-.navbar a{
+.navbar a {
     font-size: 1.5rem;
     color: var(--text-color);
-    margin-left: 4rem;
     font-weight: 700;
-
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
 }
 
 .navbar a:hover,
 .navbar a:active {
-    color: var(--text-color) !important;
+    background: var(--main-color);
+    color: var(--snd-bg-color);
+    transition: 0.3s;
 }
 
 
 #menu-icon{
    font-size: 3.6rem;
-   color: var(--text-color); 
-   display: none;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
 }
 
 .home{
@@ -498,22 +507,24 @@ form .btn2{
 @media (max-width: 768px) {
     #menu-icon {
         display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 101;
     }
 
     .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
+        right: -100%;
         width: 100%;
-        padding: 1rem 3%;
-        background: var(--bg-color);
-        border-top: .1rem solid rgba(0, 0, 0, 0.2);
-        box-shadow: .5rem 1rem rgba(0, 0, 0, 0.2);
-        display: none;
+        height: 100vh;
+        background: var(--snd-bg-color);
+        flex-direction: column;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
     }
 
     .navbar .active {
-        display: block;
+        right: 0;
     }
 
     .navbar a {
