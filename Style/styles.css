@@ -59,6 +59,20 @@ section {
     
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Initially hidden */
+    width: 250px;
+    height: 100vh;
+    background: #333;
+    transition: right 0.3s ease-in-out;
+}
+
+.navbar.active {
+    right: 0;
+}
+
 .navbar a{
     font-size: 1.5rem;
     color: var(--text-color);
