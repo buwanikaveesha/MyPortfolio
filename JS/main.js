@@ -1,12 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-    /*------------------ Tab Switching Function ------------------*/
+/*------------------ Tab Switching Function ------------------*/
 function opentab(tabname, event) {
     let tabContents = document.querySelectorAll(".tab-contents");
     let tabLinks = document.querySelectorAll(".tab-links");
 
+    // Remove active classes
     tabContents.forEach(content => content.classList.remove("active-tab"));
     tabLinks.forEach(link => link.classList.remove("active-link"));
 
+    // Add active classes to the clicked tab and its content
     document.getElementById(tabname).classList.add("active-tab");
     event.currentTarget.classList.add("active-link");
 }
