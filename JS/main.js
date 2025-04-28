@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     /*------------------ Tab Switching Function ------------------*/
-    function opentab(tabname) {
+    function opentab(tabname, event) {
         let tabContents = document.querySelectorAll(".tab-contents");
         let tabLinks = document.querySelectorAll(".tab-links");
 
