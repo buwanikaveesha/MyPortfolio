@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
     /*------------------ Tab Switching Function ------------------*/
-    function opentab(tabname, event) {
-        let tabContents = document.querySelectorAll(".tab-contents");
-        let tabLinks = document.querySelectorAll(".tab-links");
+function opentab(tabname, event) {
+    let tabContents = document.querySelectorAll(".tab-contents");
+    let tabLinks = document.querySelectorAll(".tab-links");
 
-        tabContents.forEach(content => content.classList.remove("active-tab"));
-        tabLinks.forEach(link => link.classList.remove("active-link"));
+    tabContents.forEach(content => content.classList.remove("active-tab"));
+    tabLinks.forEach(link => link.classList.remove("active-link"));
 
-        document.getElementById(tabname).classList.add("active-tab");
-        event.currentTarget.classList.add("active-link");
-    }
+    document.getElementById(tabname).classList.add("active-tab");
+    event.currentTarget.classList.add("active-link");
+}
 
     /*------------------ Toggle Icon Navbar ------------------*/
     let menuIcon = document.getElementById("menu-icon");
